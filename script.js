@@ -22,7 +22,7 @@ function cartaRandom(){
         this.valor = parseInt(Math.random()*12)+1;
         let carta = this.valor;
 
-        fetch('/imagenCartas.json')
+        fetch('imagenCartas.json')
         .then((img) => img.json())
         .then(imagenCarta => {
 
